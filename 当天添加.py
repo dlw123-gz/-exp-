@@ -6,8 +6,7 @@ from datetime import datetime
 
 def append_stock_data(source_csv_path, target_folder):
     """
-    将源CSV中的股票数据追加到对应代码的目标CSV文件末尾
-    （源CSV读取规则：跳过第一行，列顺序固定为代码、价格、成交量；自动清理代码格式为6位纯数字）
+
 
     Args:
         source_csv_path: 包含所有股票代码和数据的源CSV文件路径
