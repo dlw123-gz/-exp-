@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
+
 """
-V37 股票预测脚本
-使用优化后的策略：prob>=0.80 & 连阳<3 & 昨日<7 & MA5<3
-目标：预测明天可能涨停的股票
 """
 import pandas as pd
 import numpy as np
@@ -12,10 +9,10 @@ from datetime import datetime, timedelta
 import warnings
 warnings.filterwarnings('ignore')
 
-# 配置
+# 配置(自己填写）
 SOURCE_FOLDER = r"C:\股票\original data"
-MODEL_PATH = r"C:\Users\dlw\Desktop\股票分析\涨停选股系统\models_final\model_v36_xgb.json"
-OUTPUT_FOLDER = r"C:\Users\dlw\Desktop\股票分析\涨停选股系统\predictions"
+MODEL_PATH = r"C:\Users\股票分析\涨停选股系统\models_final\model_v36_xgb.json"
+OUTPUT_FOLDER = r"C:\User"
 
 # 最佳策略参数
 PROB_THRESHOLD = 0.80
